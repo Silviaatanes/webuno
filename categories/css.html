@@ -4,113 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css"/>
+    
     <title>práctica estilos css</title>
 
     <title> Estilos 1</title>
-    <style>
-        /*selector universal  */
-        * {
-            margin: 0;
-            padding: 0;
-            background-color: pink;
-        }
-
-        * {
-            color: red;
-        }
-
-
-        /* esto anula y sustituye al anterior  */
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            color: black;
-        }
-
-        header h1 {
-
-            /*  la propiedad height establece el alto, padding es el relleno */
-            width: 100%;
-            height: 50px;
-            padding: 8px;
-
-            /*    la propiedad blackground es el color de fondo */
-            background-color: gray;
-        }
-
-        nav {
-            /*  esto es un borde de 1 px ,liso del nav en color rojo */
-            border: 1px solid red;
-        }
-
-        article {
-            background-color: white;
-            /* aqui se establece el ancho de todos los article*/
-            width: 45%;
-            /* aqui se establece el relleno de todos los article*/
-            padding: 10px;
-            
-            /* aqui se establece el margen de todos los article*/
-            /* margin: 3% 3% 3% 3% 
-            margin: 3% 3%
-            margin top 3%;
-            margin-right:3%;
-            margin-left:3%;
-            margin-botton:3%; */
-            
-             margin: 3%;
-            /* aqui se establece el borde de todos los article*/
-            border: 1px solid black;
-           
-            
-            /* esto establece el ancho del 100% en todos los article */
-            /* herederos de otro article heredero de una sección */
-            section article article {
-                width:100%;
-                
-              
-          /*  esta declaración anula y sustituye a las anteriores      */
-                section article {
-                    width: 100%;
-                  margin-left: 0;
-                margin-right: 0;
-                 /*    esto es lo mismo */
-                    margin: 3% 0 ;
-            }
-
-                article article p {
-                    background-color: lime;
-                }
-                article,
-                article p,
-            article h2 {
-                /* aqui se establece el color de todos los article parrafos herederos de un article*/
-                /* aqui se establece el color de todos los h2 hijos de parrafo*/
-                background-color: white;
-            }
-
-        footer h2 {
-            /* aqui se establece el ancho del footer */
-
-            width: 100%;
-            /* aqui se establece el alto del footer */
-            height: 80px;
-            line-height:
-                /* aqui se establece el alto de la linea de texto*/
-                /* como le ponemos el mismo que heigth ,lo centramos verticalmente*/
-                padding:10px;
-            /* aqui se establece el alto de la linea de texto*/
-
-            text-align: center;
-            background-color: black;
-            color: white;
-        }
-
-    </style>
+    
 </head>
 
 <body>
@@ -133,7 +32,41 @@
         </ul>
     </nav>
     <main>
-        <section></section>
+        <section>
+            <h2>1.6. Cómo incluir CSS en un documento XHTML</h2>
+            <articulo>
+              <h3>1.6.1. Incluir CSS en el mismo documento HTML</h3>
+               <p>
+                los estilos se definen en una zona especifica del propio documento HTML.se emplea la etiqueta <em>style</em> de HTML y solamente se pueden incluir en la cabecera del documento (sólo dentro de la sección <em>head</em>).
+            </p>
+            <p>
+                Este método se emplea cuando se define un número pequeño de estilos o cuando se quieren incluir estilos específicos en una determinada página HTML que completen los estilos que se incluyen por defecto en todas las páginas del sitio web.
+            </p>
+            <p>
+                El principal inconveniente es que si se quiere hacer una modificación en los estilos definidos, es necesario modificar todas las páginas que incluyen el estilo que se va a modificar.
+            </p>
+            <p>
+                Los ejemplos mostrados en este libro utilizan este método para aplicar CSS al contenido HTML de las páginas. De esta forma el código de los ejemplos es más conciso y se aprovecha mejor el espacio.
+            </p>
+           
+            <h3>1.6.2. Definir CSS en un archivo externo</h3>
+            <p>
+                En este caso, todos los estilos CSS se incluyen en un archivo de tipo CSS que las páginas HTML enlazan mediante la etiqueta <em>link</em>. Un archivo de tipo CSS no es más que un archivo simple de texto cuya extensión es .css Se pueden crear todos los archivos CSS que sean necesarios y cada página HTML puede enlazar tantos archivos CSS como necesite.
+            </p>
+            <p>
+                Si se quieren incluir los estilos del ejemplo anterior en un archivo CSS externo, se deben seguir los siguientes pasos:
+            </p>
+               <ol>
+                   <li> Se crea un archivo de texto y se le añade solamente el siguiente contenido:
+                   <ul>
+                       <li><spam class="verde">p</spam> { color: black; font-family: Verdana; }</li>
+               </ul>
+                </li>
+               <li> Se guarda el archivo de texto con el nombre estilos <em>.css</em> Se debe poner especial atención a que el archivo tenga extensió <em>.css</em>  y no <em>.txt</em></li>
+               <li>En la página HTML se enlaza el archivo CSS externo mediante la etiqueta <em>link:</em></li>
+                </ol>
+             </articulo>
+        </section>
         <section>
             <article>
                 <h2>lorem 1</h2>

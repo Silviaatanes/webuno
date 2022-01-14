@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Marko+One&display=swap');
+        /* selector universal */
+        * {
+            margin: 0;
+            /*padding es la propiedad del relleno*/
+            padding: 0;
+            /* color fondo pagina entera */
+            background-color: antiquewhite;
+        }
+
+        /*esto anula y sustituye al anterior*/
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: black;
+            font-family: 'Kanit', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Marko One', serif;
+        }
+
+        li,
+        a,
+        p {
+            color: dimgray
+        }
+
+        header h1 {
+            widows: 100%;
+            /* la propiedad height establece el alto */
+            height: 50px;
+            /* margen */
+            margin: 0px;
+            /* color de fondo*/
+            background-color: black;
+        }
+
+        h1 {
+            color: antiquewhite
+        }
+
+        nav {
+            /*esto es un borde lisso en color coral*/
+            border: 1px solid coral;
+        }
+
+        article article p {
+            background-color: lime;
+        }
+        
+        article,
+        article p,
+        article h2 {
+            background-color: white
+        }
+
+        article {
+            width: 40%;
+            padding: 10px;
+            /* esto establece el margen de los articulos */
+            /* margin-top: 3% */
+            /* margin-right: 3% */
+            /* margin-botton: 3% */
+            /* margin-left: 3% */
+            /* margin total es lo de abajo "margin: 3%" */
+            /* primeros 3% se aplican "arriba y abajo" y los siguientes "izquierda y derecha" */
+            /* margin: 3% 3% (arriba y abajo) 3% 3% (izquierda y derecha) */
+            margin: 3%;
+            /*esto establece el borde de los articulos */
+            border: 1px solid: black;
+
+        }
+        /* esto establece el ancho al 100% para todos los article herederos de otro article y herederos una section */
+        section article article {
+            width: 100%;
+        }
+        
+        /* este anula y sustituye al anterior */
+        section article {
+            width: 100%;
+            margin-left: 0%;
+            margin-right: 0%;
+            border: 1px;
+        }
+
+       footer {
+            widows: 100%;
+            /*altura*/
+            height: 80px;
+            /* centrar linea texto con respecto al fondo*/
+            line-height: 80px;
+            /*padding = relleno*/
+            padding: 10px;
+            /* color fondo footer*/
+            background-color: black;
+            /* color texto footer */
+            color: white;
+        }
+    

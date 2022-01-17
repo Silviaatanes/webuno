@@ -21,16 +21,31 @@
             color: black;
 font-family: 'Libre Baskerville', serif;
         }
-
-
+/* 
+======================== */
 /* formato de textos */
-
+/* =============================*/
 
 p, em, strong, li, a {
     font-family: 'Montserrat', sans-serif;
           color: dimgray;
     font-size: 16px;
 }
+/* font-weight establece a anchura de la letra */
+a { font-weight: bold;
+    color: steelblue;
+}
+em {
+    font-style: italic;
+}
+/* font- variant */
+. todomayusculas {
+    font-variant:small-caps
+}
+.pepe {
+    color:green
+}
+
 
         header h1 {
             widows: 100%;

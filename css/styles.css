@@ -45,6 +45,29 @@ em {
 .pepe {
     color:green
 }
+.alineadoderecha {
+    text-align: right;
+}
+
+.alineadocentro {
+    text-align: center;
+}
+.alineadojustificado 
+{ text-align:  justify;
+}
+/* 
+----------------------------------------------------------- */
+
+/* prioridades*/
+/* el selector de ud es la almohadilla # */
+/* #violeta {color :violet;}
+article ol li {color: blue;} */
+
+#violeta {color: darkviolet;}
+.rosa{color:pink;}
+li .rosa {color: pink;}
+article ol li{color: blue; }
+li {color:tomato;}
 
 
         header h1 {
